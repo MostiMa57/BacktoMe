@@ -1,0 +1,23 @@
+.js-input {
+    width: 225px;
+    height: 25px;
+    border-radius: 3px;
+    border-width: 1.5px;
+    padding-left: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+}
+
+.buttonCalc {
+    height: 36px;
+    width: 90px;
+    background-color: rgb(74, 209, 74);
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+
+}

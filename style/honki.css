@@ -1,0 +1,8 @@
+.gambarBesar {
+    border: 1px solid red;
+}
+
+.gambarnya {
+    object-fit: contain;
+
+}
