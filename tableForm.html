@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel & Form</title>
+    <link rel="stylesheet" href="./style/tableForm.css">
+</head>
+<body>
+    <h1>Tag Table</h1>
+    <table border="1" cellpadding="10" cellspacing="0">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th width="200">Invoice</th>
+                <th>Item</th>
+                <th>Qty</th>
+                <th>Price</th>
+                <th>Total Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>INV001</td>
+                <td>Item A</td>
+                <td>2</td>
+                <td>100</td>
+                <td rowspan="2">200</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>INV002</td>
+                <td>Item B</td>
+                <td>1</td>
+                <td>150</td>
+                
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>INV003</td>
+                <td>Item C</td>
+                <td>3</td>
+                <td>50</td>
+                <td>150</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>INV004</td>
+                <td>Item D</td>
+                <td>5</td>
+                <td>20</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>INV005</td>
+                <td>Item E</td>
+                <td>4</td>
+                <td>30</td>
+                <td>120</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total</td>
+                <td>10</td>
+                <td>1000</td>
+                <td>2000</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+    <br>
+    <table border="1" rules="all">
+        <tr>
+            <th>Nama</th>
+            <th>Umur</th>
+            <th>Alamat</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>30</td>
+            <td>New York</td>
+        </tr>
+    </table>
+    <br>
+    <h1>Tag Form</h1>
+    <p>Pendaftaran Mahasiswa Baru</p>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+        <table border="0" cellpadding="5" cellspacing="0">
+          <tr>
+            <td><label for="nim">NIM</label></td>
+            <td><input type="text" id="nim" name="nim" value="120215421"></td>
+          </tr>
+          <tr>
+            <td><label for="nama">Nama</label></td>
+            <td><input type="text" id="nama" name="nama" placeholder="Enter Text"></td>
+          </tr>
+          <tr>
+            <td><label for="tanggal_lahir">Tanggal Lahir</label></td>
+            <td><input type="date" id="tanggal_lahir" name="tanggal_lahir" placeholder="dd/mm/yyyy"></td>
+          </tr>
+          <tr>
+            <td><label for="username">Username</label></td>
+            <td><input type="text" id="username" name="username" placeholder="Enter Text"></td>
+          </tr>
+          <tr>
+            <td><label for="password">Password</label></td>
+            <td><input type="password" id="password" name="password" placeholder="Enter Text"></td>
+          </tr>
+          <tr>
+            <td>Jenis Kelamin</td>
+            <td>
+              <input type="radio" id="laki-laki" name="jenis_kelamin" value="Laki-laki">
+              <label for="laki-laki">Laki-laki</label>
+              <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
+              <label for="perempuan">Perempuan</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="agama">Agama</label></td>
+            <td>
+              <select id="agama" name="agama">
+                <option value="Islam">Islam</option>
+                <option value="Kristen">Kristen</option>
+                <option value="Katolik">Katolik</option>
+                <option value="Hindu">Hindu</option>
+                <option value="Budha">Budha</option>
+                <option value="Konghucu">Konghucu</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Hobi</td>
+            <td>
+              <input type="checkbox" id="membaca" name="hobi" value="Membaca">
+              <label for="membaca">Membaca</label>
+              <input type="checkbox" id="olahraga" name="hobi" value="Olahraga">
+              <label for="olahraga">Olahraga</label>
+              <input type="checkbox" id="menulis" name="hobi" value="Menulis">
+              <label for="menulis">Menulis</label>
+              <input type="checkbox" id="berenang" name="hobi" value="Berenang">
+              <label for="berenang">Berenang</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="alamat">Alamat</label></td>
+            <td><textarea id="alamat" name="alamat" rows="4" cols="30" placeholder="Enter Text"></textarea></td>
+          </tr>
+          <tr>
+            <td><label for="upload">Upload File</label></td>
+            <td><input type="file" id="upload" name="upload"></td>
+          </tr>
+          <tr>
+            <td><label for="warna">Warna</label></td>
+            <td><input type="color" id="warna" name="warna"></td>
+          </tr>
+          <tr>
+            <td><label for="volume">Volume</label></td>
+            <td><input type="range" id="volume" name="volume" min="0" max="100"></td>
+          </tr>
+          <tr>
+            <td colspan="2" style="text-align: center;">
+              <input type="submit" value="Daftar">
+            </td>
+          </tr>
+        </table>
+      </form>
+</body>
+</html>
